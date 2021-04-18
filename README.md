@@ -60,5 +60,33 @@ ykman.exe openpgp set-touch ENC on
 ykman.exe openpgp set-touch SIG on
 ykman.exe openpgp set-touch AUT on
 ```
+Weitere Optionen:
+```
+Usage: ykman.exe openpgp set-touch [OPTIONS] KEY POLICY
+
+  Set touch policy for OpenPGP keys.
+
+  KEY     Key slot to set (sig, enc, aut or att).
+  POLICY  Touch policy to set (on, off, fixed, cached or cached-fixed).
+
+  The touch policy is used to require user interaction for all operations using the private key on the YubiKey. The touch policy is set indivdually for each key slot.
+  To see the current touch policy, run
+
+      $ ykman openpgp info
+
+  Touch policies:
+
+  Off (default)   No touch required
+  On              Touch required
+  Fixed           Touch required, can't be disabled without a full reset
+  Cached          Touch required, cached for 15s after use
+  Cached-Fixed    Touch required, cached for 15s after use, can't be disabled
+                  without a full reset
+
+Options:
+  -a, --admin-pin TEXT  Admin PIN for OpenPGP.
+  -f, --force           Confirm the action without prompting.
+  -h, --help            Show this message and exit.
+```
 
 # SSH über OpenPGP
