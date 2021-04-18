@@ -29,7 +29,8 @@ Es ist wichtig den Public Key zu speichern bzw. diesen zu veröffentlichen.
 Hierzu bietet es sich an diesen per Kleoptra auf einen öffentlichen Keyserver zu Exportieren. Somit kann der Key von anderen Nutzern gefunden und genutzt werden.
 Alternativ oder zusätzlich bietet es sich an den Key als Anhang an seine E-Mails zu hängen, so ist es möglich für den Empänger diesen direkt zu importieren.
 
-## Neuer PC (Windows)
+
+# Neuer PC (Windows)
 Getestet mit wingpg (Kleopatra)
 https://www.gpg4win.de/
 
@@ -40,5 +41,15 @@ https://www.gpg4win.de/
 ```fetch```
 4. Quit
 ```quit```
+
+## Schlüssel beglaubigen
+1. Windows CMD Fenster öffnen
+2. Schlüssel editieren {KEY ID} gegen die eigene ID des Schlüssel ersetzen (z. B. 039F0FCD)
+```gpg --key-edit {KEY ID}```
+3. Verteuens-Level festlegen
+```trust```
+4. Dem Eigenen Schlüssel absolut Vertrauen mit Option 5 und mit ENTER bestäntigen, und mit j Annahmen.
+5. Der Schlüssel sollte jetzt in Kleopatra als Beglaubigt angezeigt werden.
+
 
 # SSH über OpenPGP
