@@ -1,5 +1,6 @@
 # gpg
 public pgp key
+Search / Upload for keys: http://pool.sks-keyservers.net/
 
 # yubikey
 ## Erste Schritte - Zertifikate einrichten
