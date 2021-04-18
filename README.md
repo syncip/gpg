@@ -56,9 +56,9 @@ Für "mehr" Sicherheit ist es möglich den Yubikey so zu konfigurieren, dass die
 Wichtig zu wissen ist, dass der Yubikey bzw. Kleopatra keine Rückmeldung gibt das der Key berührt werden muss. Einziges Ziechen ist das der Yubikey blinkt.
 
 ```
-ykman openpgp set-touch aut off
-ykman openpgp set-touch sig on
-ykman openpgp set-touch enc on
+ykman.exe openpgp set-touch ENC on
+ykman.exe openpgp set-touch SIG on
+ykman.exe openpgp set-touch AUT on
 ```
 
 # SSH über OpenPGP
