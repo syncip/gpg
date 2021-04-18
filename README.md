@@ -1,5 +1,6 @@
 # gpg
-public pgp key
+Gedankenstütze und Austausch meines public Keys.
+
 Search / Upload for keys: http://pool.sks-keyservers.net/
 
 # yubikey
