@@ -51,5 +51,12 @@ https://www.gpg4win.de/
 4. Dem Eigenen Schlüssel absolut Vertrauen mit Option 5 und mit ENTER bestäntigen, und mit j Annahmen.
 5. Der Schlüssel sollte jetzt in Kleopatra als Beglaubigt angezeigt werden.
 
+## Touch
+Für "mehr" Sicherheit ist es möglich den Yubikey so zu konfigurieren, dass dieser brührt werden muss um eine Aktion (Authentifizieren, Signieren, Verschlüssel) auszuführen.
+Wichtig zu wissen ist, dass der Yubikey bzw. Kleopatra keine Rückmeldung gibt das der Key berührt werden muss. Einziges Ziechen ist das der Yubikey blinkt.
+
+```ykman openpgp set-touch aut off
+ykman openpgp set-touch sig on
+ykman openpgp set-touch enc on```
 
 # SSH über OpenPGP
