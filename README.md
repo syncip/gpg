@@ -3,6 +3,9 @@ Gedankenstütze und Austausch meines public Keys.
 
 Search / Upload for keys: http://pool.sks-keyservers.net/
 
+# New Key
+https://keys.openpgp.org/vks/v1/by-fingerprint/08B5136205D148682F829BF49CB532CC37BA0631
+
 # yubikey
 ## Erste Schritte - Zertifikate einrichten
 1. Neues Zertifikat erstellen - Yubikey mit PC verbinden
